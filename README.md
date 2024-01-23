@@ -29,8 +29,8 @@ Log in to your Azure account through Azure CLI:
 
 ### User defined parameters
 Files are upoloaded to a container so in the FileUploader.sh script: 
-**local container_name** = 'Your Azure Storage  container name'
-**local connection_string** = 'Your Azure Storage connection string'
+* **local container_name** = 'Your Azure Storage  container name'
+* **local connection_string** = 'Your Azure Storage connection string'
 
 
 ### Set Up Aliases
