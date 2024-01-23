@@ -4,9 +4,9 @@
 upload_file_to_azure() {
     local file_path=$1
     local blob_name=$2
-    local container_name="fileuploader-con"  # Replace with your container name
-    local connection_string="DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=myazureresumestorageacct;AccountKey=+l+FwqKDi5nRUHv7dVohlQptnNMiWpqhfps9WsEgweiFoMEqU3UCuMKosT/LRlD1rqWE8tW/vTWI+ASt8lrjfg==;BlobEndpoint=https://myazureresumestorageacct.blob.core.windows.net/;FileEndpoint=https://myazureresumestorageacct.file.core.windows.net/;QueueEndpoint=https://myazureresumestorageacct.queue.core.windows.net/;TableEndpoint=https://myazureresumestorageacct.table.core.windows.net"  # Replace with your Azure Storage connection string
-    local overwrite_mode=""
+    local container_name="Your Azure Storage container name"  # Replace with your container name
+    local connection_string="Your Azure Storage Account Connection string"   # Replace with your Azure Storage connection string
+
 
     # Check if the blob exists in Azure Blob Storage
     if az storage blob exists --name "$blob_name" --container-name "$container_name" --connection-string "$connection_string" --only-show-errors | grep -q '"exists": true'; then
