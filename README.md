@@ -10,7 +10,7 @@ Ensure the following prerequisites are installed and set up before using the too
 * Download the FileUploader.sh script
 
 ## Usage
-You can easily upload files to Azure Blob Storage from your CLI using the alias you configured. Ensure the ./F
+You can easily upload files to Azure Blob Storage from your CLI using the alias you configured.
     
     clouduploader /path/to/your/file.*
 
@@ -26,6 +26,13 @@ Log in to your Azure account through Azure CLI:
  ```  
     az login 
  ```
+
+### User defined parameters
+Files are upoloaded to a container so in the FileUploader.sh script: 
+**local container_name** = 'Your Azure Storage  container name'
+**local connection_string** = 'Your Azure Storage connection string'
+
+
 ### Set Up Aliases
 To setup the **clouduploader** alias, add the following to your **.bashrc** 
 or **.bash_profile** file:
