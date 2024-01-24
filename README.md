@@ -1,4 +1,4 @@
-## clouduploader: Azure Blob Storage CLI Upload Tool
+## Azure Blob Storage CLI Upload Tool
 clouduploader is a simple CLI tool for uploading of files to Azure Blob Storage it has additional functionality to handle file conflicts 
 by providing options to overwrite, skip, or rename files.
 
